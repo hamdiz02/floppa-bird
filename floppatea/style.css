@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body{
+    background: pink;
+    display: grid;
+    place-items: center;
+}
+
+
+.cont{
+    position: absolute;
+    top: 5%;
+    width: 400px;
+    height: 700px;
+    border: solid rgb(30, 30, 30) 2px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.can {
+    position: absolute;
+    background-image: url(files/br.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.msg{
+    display: none;
+}
+.btn:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(30, 30, 30);
+    border: none;
+}
+.score{
+    position: absolute;
+    right: 4%;
+    top: 1%;
+    font-size: 1.5rem;
+    color: rgb(30, 30, 30);
+    z-index: 1;
+    width: 20%;
+    height: auto;
+    text-align: center;
+    background: transparent;
+}
+.btn{
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    top: 40%;
+    left: 25%;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    background-color: transparent;
+    border: solid rgb(0, 0, 0) 2px;
+    border-radius: 5px;
+}
+@media screen and (max-height : 700px){
+    *{
+        overflow: hidden;
+    }
+    .cont{
+        top: 2.5%;
+        width: 85%;
+        height: 95%;
+        left: 7.5;
+    }
+}
